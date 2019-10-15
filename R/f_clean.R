@@ -6,6 +6,8 @@
 #' @export f_clean
 #'
 #' @examples
+#'
+#' f_clean(raw_data)
 f_clean <- function(data){
   data %>%
     mutate(Dive = as.numeric(gsub(".*_", "", DIVE_NO))) %>%
