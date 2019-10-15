@@ -1,4 +1,4 @@
-#' f_clean
+#' Clean up raw data
 #'
 #' @param data
 #'
