@@ -20,3 +20,10 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Imports: 
+    dplyr,
+    ggplot2,
+    broom,
+    Distance,
+    zoo,
+    lubridate
