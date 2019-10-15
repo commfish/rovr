@@ -1,0 +1,17 @@
+Package: rovr
+Type: Package
+Title: Estimate yelloweye rockfish density
+Version: 0.1.0
+Authors@R: c(
+    person("Kellii", "Wood", , "kellii.wood@alaska.gov", role = "aut"
+    ),
+    person("Ben", "Williams", , "ben.williams@alaska.gov", c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-7295-2076")
+    ),
+    person("ADF&G", role = c("cph", "fnd"))
+  )
+Description: Automate ROV-based line transect data cleaning and yelloweye density estimation for southeast Alaska. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
