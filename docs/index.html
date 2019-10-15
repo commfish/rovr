@@ -44,6 +44,9 @@
   </a>
 </li>
 <li>
+  <a href="articles/rovr.html">Get started</a>
+</li>
+<li>
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
@@ -68,99 +71,18 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of rovr from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"rovr"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Install devtools </span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># Install development version from GitHub</span></a>
+<a class="sourceLine" id="cb1-5" title="5">devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span>(<span class="st">"commfish/rovr"</span>)</a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co"># load the library</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(rovr)</a></code></pre></div>
 </div>
-<div id="background" class="section level2">
+<div id="usage" class="section level2">
 <h2 class="hasAnchor">
-<a href="#background" class="anchor"></a>Background</h2>
-<div id="commercial-fishery-development-and-history" class="section level3">
-<h3 class="hasAnchor">
-<a href="#commercial-fishery-development-and-history" class="anchor"></a>Commercial Fishery Development and History</h3>
-<p>The demersal shelf rockfish (DSR) assemblage is composed of 7 species: yelloweye(<em>Sebastes rubberimus</em>), quillback (<em>S. maliger</em>), copper (<em>S. caurinus</em>), rosethorn (<em>S. helvomaculatus</em>), China (<em>S. nebulosus</em>), canary (<em>S. pinniger</em>), and tiger rockfish (<em>S. nigrocinctus</em>) with yelloweye being the predominant species harvested. The commercial fishery has been active since the late 1979 and catch data prior to 1992 is problematic due to changes in the DSR species assemblage as well as the lack of a directed fishery harvest card prior to 1990 for Central Southeast Outside (CSEO), Southern Southeast Outside (SSEO), and Northern Southeast Outside (NSEO), and in 1992 for East Yakutat (EYKT) management areas. The directed DSR catch in SEO was above 350 t in the mid-1990s. Since 1998, landings have been below 250 t, and since 2005, directed landings have typically been less than 100 t. During the reported years total harvest peaked at 604 t in 1994, and directed harvest peaked at 381 t in 1994. Although directed landings were higher in the 1990s, since 2000, 58.7% of the DSR total reported catch is from incidental catch of DSR in the halibut fishery. It should be emphasized, however, that prior to 2005, unreported mortality from incidental catch of DSR associated with the halibut and other non-directed fisheries is unknown and may have been as great as a few hundred tons annually. This is due to full retention requirements that were passed by the NPFMC in 1998 did not go into effect until 2005 where fishermen are required to retain and report all DSR caught.<br>
-Directed commercial fishery landings have often been constrained by other fishery management actions. In 1992, the directed DSR fishery was allotted a separate halibut prohibited species cap (PSC) and is therefore no longer affected when the PSC is met for other longline fisheries in the GOA. In 1993, the directed fishery was closed early due to an unanticipated increase in DSR incidental catch during the halibut fishery. However, now the incidental catch must be projected because the directed fishery occurs before the Pacific halibut fishery, which starts in mid-March.</p>
-<p>Directed commercial fisheries are held in the four management areas (EYKT, NSEO, SSEO, and CSEO) if there is sufficient quota available after the DSR mortality in other commercial fisheries (primarily the IFQ halibut fishery) is estimated. The directed fishery in NSEO has been closed since 1995; the total allocation for this management area has not been sufficient to prosecute an orderly fishery. The directed commercial DSR fisheries in the CSEO and SSEO management areas were not opened in 2005 because it was estimated that total mortality in the sport fishery was significant and combined with the directed commercial fishery would likely result in exceeding the TAC. No directed fisheries occurred in 2006 or 2007 in the SEO district as ADFG took action in two areas; one was to enact management measures to keep the catch of DSR in the sport fishery to the levels mandated by the Board of Fisheries (BOF), and the other was to further compare the estimations of incidental catch in the halibut fishery to the actual landings from full retention regulations in the commercial fishery in those years to see how closely our predicted incidental catch matched commercial landings. From 2008–2014, there was sufficient quota to hold directed commercial fisheries in at least two of the four SEO management areas. From 2015–2017, only EYKT, and in 2018 only CSEO were open to directed fishing.</p>
-</div>
-</div>
-<div id="data-sources" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-sources" class="anchor"></a>Data Sources</h2>
-<div id="commercial-fishery" class="section level3">
-<h3 class="hasAnchor">
-<a href="#commercial-fishery" class="anchor"></a>Commercial Fishery</h3>
-<ul>
-<li>Directed commercial fishery</li>
-<li>Bycatch from groundfish fisheries
-<ul>
-<li>Halibut IFQ</li>
-<li>Sablefish IFQ</li>
-<li>Lingcod</li>
-<li>Pacific cod</li>
-<li>Black rockfish</li>
-</ul>
-</li>
-<li>Bycatch in salmon troll fishery</li>
-</ul>
-</div>
-<div id="sport-fishery" class="section level3">
-<h3 class="hasAnchor">
-<a href="#sport-fishery" class="anchor"></a>Sport Fishery</h3>
-<ul>
-<li>Charter logbook (guided)</li>
-<li>State-wide harvest survey (un-guided)</li>
-</ul>
-</div>
-<div id="subsistence-fishery" class="section level3">
-<h3 class="hasAnchor">
-<a href="#subsistence-fishery" class="anchor"></a>Subsistence Fishery</h3>
-<ul>
-<li>Community harvest interviews and surveys</li>
-</ul>
-</div>
-<div id="survey" class="section level3">
-<h3 class="hasAnchor">
-<a href="#survey" class="anchor"></a>Survey</h3>
-<ul>
-<li>ROV survey</li>
-</ul>
-</div>
-<div id="yelloweye-rockfish-survey-density-estimate-using-distance-sampling-methodology" class="section level3">
-<h3 class="hasAnchor">
-<a href="#yelloweye-rockfish-survey-density-estimate-using-distance-sampling-methodology" class="anchor"></a>Yelloweye Rockfish Survey Density Estimate using Distance Sampling Methodology</h3>
-<p>The <code>Distance</code> package is used to estimate population densities and abundances using line and point transect sampling methodology. For Southeast Alaska yelloweye rockfish (YE) we conduct line transects using an remotely operated vehicle (ROV) to conduct line transects in YE rocky habitat and conduct video review to determine species ID and lengths.</p>
-<p>Distance sampling has 3 key assumptions that include:</p>
-<p><strong>1. Fish on the transect line or point are detected with certainty;</strong></p>
-<p>1) Fish are detected on both sides of the transect line using the ROV stereo left and right cameras and the belly camera is used to detect any fish that may have been overlooked that we cold not initially be detected with the stereo cameras.</p>
-<p><strong>2. Fish do not move;</strong></p>
-<p>1) The ROV is assumed to have no behavioral affect on fish (e.g., attraction/avoidance), therefore it is important to ensure fish are detected on their first appearance.</p>
-<p><strong>3. Measurements are exact.</strong></p>
-<p>1) During video review measurements from the transect line that are converted within the Eventmeasure software from a radial measurement (distance measurement from ROV point of view) to a perpendicular measurement (distance measurement from ROV side view).</p>
-</div>
-<div id="survey-data" class="section level3">
-<h3 class="hasAnchor">
-<a href="#survey-data" class="anchor"></a>Survey Data</h3>
-<p>Survey data consists of multiple tables that will need to be tidied, summarized, and joined.<br>
-You will be working with 3 main tables in order to produce a valid density estimate which consist of:</p>
-<p><strong>1. ROV Navigation Table</strong></p>
-<p>1) This table consists of the dive number, time (UTC seconds), vessel and ROV position in UTM projection (meters), ROV heading, etc.<br>
-We are mainly concerned with the dive number, time, and ROV position as this will tells us when and where the ROV is while conducting video review.</p>
-<p><strong>2. Specimen Table</strong></p>
-<p>1) This is created during the video review process in the EventMeasure software and consists of video file name, time (use UTC seconds), length (mm) measurement (YE only), precision and direction of length measurement, x, y, z distance from the transect line (MID_X represents the perpendicular distance from the transect line at which a fish was detected), species ID (DSR, lingcod, and black rockfish), specimen number, stage (adult, subadult or juvenile used for YE only), and activity.</p>
-<p><strong>3. Video Quality Control</strong></p>
-<p>1) Review quality of video for good and bad segments for each line transect that is then used in determining good length transects from the ROV nav data and consists of video filename, video frame, time (UTC seconds), dive number, video quality (good or bad), video quality code, description of good and bad assignments (i.e. good going forward, ROV loitering in same area, going over a large drop-off, etc.), and a start and end assignment for each transect.</p>
-<!-- <img src="https://i.imgur.com/6l7IpTA.png?1"> -->
-</div>
-<div id="exploratory-analysis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#exploratory-analysis" class="anchor"></a>Exploratory Analysis</h3>
-<p>Post-tidying survey data is analyzed using histograms as an exploratory analysis to determine oddities in the data visually.<br>
-The general pattern we want to see is a shoulder shape with the highest detection of fish occuring closest to the transect line with detection decreasing as distance from the transect line increases.<br>
-If oddities occur such as, spikes, heaped, overdisperesed, or generally poor data this is most likely due to bad lighting during video review, camera issues, ROV data, etc.<br>
-It is best to double-check your raw data and ensure you have tidied your data correctly for analysis. If issues still remain then bin sizes can be established within the histogram and cutoff points that truncate the data can be established.</p>
-<p><img src="http://distancesampling.org/images/distance-animation.gif"></p>
-<!-- <img src="https://i.imgur.com/2NtktLg.png">  -->
-<p><strong>Source:</strong> <a href="http://distancesampling.org" class="uri">http://distancesampling.org</a></p>
-</div>
+<a href="#usage" class="anchor"></a>Usage</h2>
 </div>
 </div>
   </div>
@@ -176,8 +98,9 @@ It is best to double-check your raw data and ensure you have tidied your data co
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Kellii Wood <br><small class="roles"> Author </small>  </li>
 <li>Ben Williams <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-7295-2076" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>Kellii Wood <br><small class="roles"> Author </small>  </li>
+<li>Andrew Olson <br><small class="roles"> Author </small>  </li>
 <li>ADF&amp;G <br><small class="roles"> Copyright holder, funder </small>  </li>
 </ul>
 </div>
@@ -187,7 +110,7 @@ It is best to double-check your raw data and ensure you have tidied your data co
 
 
       <footer><div class="copyright">
-  <p>Developed by Kellii Wood, Ben Williams, ADF&amp;G.</p>
+  <p>Developed by Ben Williams, Kellii Wood, Andrew Olson, ADF&amp;G.</p>
 </div>
 
 <div class="pkgdown">
