@@ -1,8 +1,8 @@
 ---
-title: "rovr"
+title: "Introduction to rovr"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{rovr}
+  %\VignetteIndexEntry{Introduction to rovr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
