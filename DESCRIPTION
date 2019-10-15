@@ -5,6 +5,8 @@ Version: 0.1.0
 Authors@R: c(
     person("Kellii", "Wood", , "kellii.wood@alaska.gov", role = "aut"
     ),
+    person("Andrew", "Olson", , "andrew.olson@alaska.gov", role = "aut"
+    ),
     person("Ben", "Williams", , "ben.williams@alaska.gov", c("aut", "cre"),
       comment = c(ORCID = "0000-0001-7295-2076")
     ),
