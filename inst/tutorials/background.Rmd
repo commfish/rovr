@@ -1,13 +1,11 @@
 ---
 title: "Background"
-output: learnr::tutorial
-runtime: shiny_prerendered
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Background}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
-
-```{r setup, include=FALSE}
-library(learnr)
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 
 ### Commercial Fishery Development and History
